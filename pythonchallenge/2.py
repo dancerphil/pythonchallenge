@@ -2,7 +2,7 @@
 '''
 Created on 2015年10月16日09时48分
 
-@author: dancerphil
+@author: hp
 '''
 s=r'''
 %%$@_$^__#)^)&!_+]!*@&^}@[@%]()%+$&[(_@%+%$*^@$^!+]!&_#)_*}{}}!}_]$[%}@[{_@#_^{*
@@ -1233,15 +1233,7 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 #         news += char
 # print news
 
-# # 2
-# def f(x):
-#     return x>='a' and x <= 'z'
-# print filter(f,s)
-
-# # 3
-# import string
-# print filter(lambda x: x in string.letters,s)
-
-# # 4
-# import re
-# print re.findall(r'[a-z]', s)
+# 2
+def f(x):
+    return x>='a' and x <= 'z'
+print filter(f,s)
