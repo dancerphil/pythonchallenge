@@ -1226,22 +1226,23 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 }!)$]&($)@](+(#{$)_%^%_^^#][{*[)%}+[##(##^{$}^]#&(&*{)%)&][&{]&#]}[[^^&[!#}${@_(
 #@}&$[[%]_&$+)$!%{(}$^$}*
 '''
-# # 1
-# news=""
-# for char in s:
-#     if char >='a' and char <= 'z' :
-#         news += char
-# print news
 
-# # 2
-# def f(x):
-#     return x>='a' and x <= 'z'
-# print filter(f,s)
+# 1
+news=""
+for char in s:
+    if char >='a' and char <= 'z' :
+        news += char
+print news
 
-# # 3
-# import string
-# print filter(lambda x: x in string.letters,s)
+# 2
+def f(x):
+    return x>='a' and x <= 'z'
+print filter(f,s)
 
-# # 4
-# import re
-# print re.findall(r'[a-z]', s)
+# 3
+import string
+print filter(lambda x: x in string.letters,s)
+
+# 4
+import re
+print re.findall(r'[a-z]', s)
