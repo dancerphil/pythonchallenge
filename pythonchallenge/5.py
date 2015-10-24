@@ -11,7 +11,7 @@ import urllib
 f= urllib.urlopen('http://www.pythonchallenge.com/pc/def/banner.p')
 banner= pickle.load(f)
 for line in banner:
-    print(''.join(map(lambda x: x[0]* x[1], line)))
+    print(''.join(map(lambda term: term[0]* term[1], line)))# 'a'*3='aaa'
 
 # # 2
 # import pickle
@@ -25,3 +25,13 @@ for line in banner:
 #             news+=term[0]
 #     news+='\n'
 # print news
+
+# # 3
+# import pickle
+# import urllib
+# f= urllib.urlopen('http://www.pythonchallenge.com/pc/def/banner.p')
+# banner= pickle.load(f)
+# news=''
+# for line in banner:
+#     line = [char * count for (char, count) in line]
+#     print ''.join(line)
