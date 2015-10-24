@@ -9,9 +9,10 @@ from PIL import Image
 img = Image.open("oxygen.png")
 
 # # step 1
+# print img.size
 # s=''
-# for i in range(95):
-#     for j in range(629):
+# for i in range(img.size[1]):
+#     for j in range(img.size[0]):
 #         s+=chr(img.getdata()[629*i+j][0])
 #     s+='\n'
 # print s
