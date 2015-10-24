@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 '''
-Created on 2015��10��25��00ʱ12��
+Created on 2015年10月25日02时59分
 
 @author: dancerphil
 '''
