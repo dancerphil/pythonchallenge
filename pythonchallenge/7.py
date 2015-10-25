@@ -6,14 +6,14 @@ Created on 2015年10月25日00时12分
 '''
 # init
 from PIL import Image
-img = Image.open("oxygen.png")
+img = Image.open("7.png")
 
 # # step 1
 # print img.size
 # s=''
 # for i in range(img.size[1]):
 #     for j in range(img.size[0]):
-#         s+=chr(img.getdata()[629*i+j][0])
+#         s+=chr(img.getdata()[img.size[0]*i+j][0])
 #     s+='\n'
 # print s
 
