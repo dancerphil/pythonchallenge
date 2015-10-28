@@ -1246,3 +1246,6 @@ print filter(lambda x: x in string.letters,s)
 # 4
 import re
 print re.findall(r'[a-z]', s)
+
+# 5
+print s.translate(None,'~!@#$%^&*()_+{}[]\n')

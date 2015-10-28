@@ -25,7 +25,14 @@ import string
 intab = "abcdefghijklmnopqrstuvwxyz"
 outtab = "cdefghijklmnopqrstuvwxyzab"
 trantab = string.maketrans(intab, outtab)
-print string.translate(s,trantab)
+print string.translate(s,trantab,'')
+
+# 3
+import string
+intab = "abcdefghijklmnopqrstuvwxyz"
+outtab = "cdefghijklmnopqrstuvwxyzab"
+trantab = string.maketrans(intab, outtab)
+print s.translate(trantab,'')
 
 # step 2
 # s2=r"http://www.pythonchallenge.com/pc/def/map.html"
