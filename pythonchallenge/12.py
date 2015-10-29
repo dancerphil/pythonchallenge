@@ -1,16 +1,29 @@
 # -*- coding: utf-8 -*- 
 '''
-Created on 2015年10月25日23时18分
+Created on 2015年10月29日20时19分
 
 @author: dancerphil
 '''
-from PIL import Image
-img = Image.open("12.jpg")
+# init
+dir='12\\'
+f = open(dir+"evil2.gfx",'rb')
 
-# 1
-im1 = Image.new(mode='RGB',size=(img.size[0],img.size[1]))
-for i in range(img.size[1]):
-    for j in range(img.size[0]):
-        if j%2==0 and i%6==0:
-            im1.putpixel((j/2, i/6), value=img.getdata()[img.size[0]*i+j])
-im1.save('12_out1.png', "PNG")
+# # step 1
+# for i in range(20):
+#     for i in range(5):
+#         content = f.read(1)
+#         c=[]
+#         c.append(content)
+#         print "{:10}".format(c),
+#     print 
+
+# step 2
+content = f.read()
+for x in xrange(0,5):
+    temp = open(dir+'out_%d.%s' % (x,'png'), 'wb')
+    temp.write(''.join(content[x::5]))
+    temp.close()
+f.close()
+
+# interesting
+print open(dir+"evil4.jpg",'rb').read()
